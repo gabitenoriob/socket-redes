@@ -7,7 +7,7 @@ with open('trivia.json', 'r') as file:
     perguntas = json.load(file)
 
 #criar socket server
-serverPort = 12345
+serverPort = 12000
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serverSocket.bind(('', serverPort))
 serverSocket.listen(2) #numero máximo de conexoes = 2 players
