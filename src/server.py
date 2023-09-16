@@ -2,7 +2,7 @@ import socket
 import json
 
 serverPort = 12345
-serverSocket= socket(AF_INIT, SOCK_STREAM)
+serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serverSocket.bind(('', serverPort))
 
 serverSocket.listen(2)

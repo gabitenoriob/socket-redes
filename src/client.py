@@ -7,7 +7,7 @@ import json
 serverName = 'servername'
 serverPort = 12345
 
-clientSocket = socket(AF_INET, SOCK_STREAM)
+clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
 
 # codigo py game 
