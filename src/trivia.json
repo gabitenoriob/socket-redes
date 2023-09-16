@@ -1,0 +1,27 @@
+[
+    {
+        "pergunta": "Quantas faces tem um cubo?",
+        "opcoes": [
+            "a) 4",
+            "b) 6",
+            "c) 8",
+            "d) 10"
+        ],
+        "resposta" : "a)4"
+
+    },
+
+    {
+        "pergunta": "Qual a capital do Brasil?",
+        "opcoes" : [
+            "a) Recife",
+            "b) Manaus",
+            "c) Brasília",
+            "d) São Paulo"
+        ],
+        "resposta" : "c) Brasília"
+
+    }
+
+
+]
