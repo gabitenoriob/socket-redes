@@ -3,6 +3,7 @@ import json
 import socket
 
 class Game:
+
     def __init__(self, client_socket):
         pygame.init()
 
@@ -12,13 +13,46 @@ class Game:
         pygame.display.set_caption("Trivia")
         self.WHITE = (255, 255, 255)
         self.BLACK = (0, 0, 0)
-        self.FONT = pygame.font.Font(None, 36)
+        self.FONT = pygame.font.Font("C:\\Users\\gabit\\socket-redes\\src\\Kathen Font by Situjuh (7NTypes).otf", 36)
+        
+       # Inicialize os botões com valores específicos
+        button_width = 100
+        button_height = 50
+        button_color = (100, 100, 100)
+
+        self.botao_a = self.Button(50, 200, button_width, button_height, "A", button_color, self.enviar_resposta_a)
+        self.botao_b = self.Button(200, 200, button_width, button_height, "B", button_color, self.enviar_resposta_b)
+        self.botao_c = self.Button(50, 300, button_width, button_height, "C", button_color, self.enviar_resposta_c)
+        self.botao_d = self.Button(200, 300, button_width, button_height, "D", button_color, self.enviar_resposta_d)
+
 
         # variável global para a pergunta atual
+        self.perguntas = []  # Lista de perguntas do arquivo JSON
         self.pergunta_atual = None
 
         # client socket aqui
         self.clientSocket = client_socket
+
+        # Carregar as perguntas do arquivo JSON
+        with open('trivia.json', 'r') as file:
+            self.perguntas = json.load(file)
+
+        # Iniciar o jogo (exibir a primeira pergunta)
+        self.iniciar_jogo()
+    
+    def iniciar_jogo(self):
+        # Verifique se há perguntas disponíveis
+        if self.perguntas:
+            # Pegue a primeira pergunta
+            self.pergunta_atual = self.perguntas[0]
+            # Remova a pergunta da lista
+            del self.perguntas[0]
+
+            # Exiba a primeira pergunta na tela
+            self.display_pergunta()
+        else:
+            # Não há mais perguntas, encerre o jogo
+            self.quit_game()
 
     # FUNCAO exibir a pergunta
     def display_pergunta(self):
