@@ -1,17 +1,14 @@
 # Conexão via Sockets
 
-Um projeto simples, mas que demonstra o poder e as funcionalidades no uso de sockets e threadings em Python, como ferramenta de conexão entre duas maquinas visando executar um programa que faça-os interagir dinâmicamente
+Um projeto  que demonstra o poder e as funcionalidades do uso de sockets e threadings em Python, como ferramenta de conexão entre duas maquinas visando executar um programa que faça-os interagir dinâmicamente
 
 ## Propósito
-* Trabalho na Disciplina de redes de computadores, professor Almir Neto.
+* Trabalho na Disciplina de Redes de Computadores, professor Almir Pereira Guimarães, 3ºperíodo.
 
-* Usar duas bibliotecas basicas de Python para fazer players interagirem entre si, em um jogo clássico nomeado "Jogo Da Velha"
+* Jogo clássico nomeado "Jogo Da Velha" usando socket de conexão UDP
 
 ---
 
-## Entenda os sockets 
-
-Primeiramente iniciamos nosso código no lado do Servidor importando as bibliotecas e criando uma classe que vai alocar a lógica do jogo.
 
 ### Função "Host_Game"
 ```
