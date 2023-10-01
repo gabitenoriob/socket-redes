@@ -8,7 +8,7 @@ Um projeto  que demonstra o poder e as funcionalidades do uso de sockets e threa
 * Jogo clássico nomeado "Jogo Da Velha" usando socket de conexão UDP
 
 ---
-
+### COMO RODAR A APLICAÇÃO
 
 ### Função "Host_Game"
 ```
