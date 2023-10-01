@@ -5,7 +5,7 @@ Um projeto  que demonstra o poder e as funcionalidades do uso de sockets e threa
 ## Propósito
 * Trabalho na Disciplina de Redes de Computadores, professor Almir Pereira Guimarães, 3ºperíodo.
 
-* Jogo clássico nomeado "Jogo Da Velha" usando socket de conexão UDP
+* Jogo clássico nomeado "Jogo Da Velha" usando socket de conexãoTCP
 
 ---
 ### COMO RODAR A APLICAÇÃO
