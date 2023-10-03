@@ -1,6 +1,6 @@
 # Jogo da Velha 2 players usando socket TCP
 
-Um projeto  que demonstra o poder e as funcionalidades do uso de sockets e threadings em Python, como ferramenta de conexão entre duas maquinas visando executar um programa que faça-os interagir dinâmicamente
+Um projeto  que demonstra o poder e as funcionalidades do uso de sockets e threadings em Python, como ferramenta de conexão entre cliente-servidor visando executar um programa que faça-os interagir dinâmicamente
 
 ## Propósito
 * Trabalho na Disciplina de Redes de Computadores, professor Almir Pereira Guimarães, 3ºperíodo.
