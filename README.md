@@ -18,6 +18,6 @@ Um projeto  que demonstra o poder e as funcionalidades do uso de sockets e threa
 4) No 1º terminal inicie o servidor digitando -> *python server.py*   <br>
 5) No 2º terminal inicie a conexão com o cliente digitando -> *python client.py***  <br>
 
-*Com esses passos o jogo começara a rodar simultaneamente nos dois terminais e assim é só seguir as instruções do proprio jogo que apareceram no terminal e seguir a partida.*
+*Com a execução correta desses passos o jogo começara a rodar simultaneamente nos dois terminais e assim é só seguir as instruções do jogo que apareceram no terminal e seguir a partida.*
 
 
